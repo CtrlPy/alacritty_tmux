@@ -24,16 +24,21 @@ This repository contains detailed instructions for setting up the Alacritty term
 Alacritty is a GPU-accelerated terminal emulator that you will use as your primary terminal.
 
 1. Install Alacritty using pacman:
-   ```bash
+   ```zsh
    sudo pacman -S alacritty
-
 ```
+
+
 2. Create the configuration file for Alacritty:
 
 ```zsh
+
 mkdir -p ~/.config/alacritty
+
 touch ~/.config/alacritty/alacritty.yml
+
 ```
+
 3. Add basic configurations to alacritty.yml:
 
 Convert alacritty.yml to alacritty.toml if prompted:
