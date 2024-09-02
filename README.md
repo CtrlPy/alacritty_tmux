@@ -24,11 +24,12 @@ This repository contains detailed instructions for setting up the Alacritty term
 Alacritty is a GPU-accelerated terminal emulator that you will use as your primary terminal.
 
 1. Install Alacritty using pacman:
-   ```zsh
+
+```zsh
    sudo pacman -S alacritty
 ```
 
-
+#
 2. Create the configuration file for Alacritty:
 
 
@@ -37,7 +38,7 @@ mkdir -p ~/.config/alacritty
 touch ~/.config/alacritty/alacritty.yml
 ```
 
-
+#
 3. Add basic configurations to alacritty.yml:
 
 Convert alacritty.yml to alacritty.toml if prompted:
@@ -45,7 +46,7 @@ Convert alacritty.yml to alacritty.toml if prompted:
 ```zsh
 alacritty migrate
 ```
-
+#
 
 ## Step 2: Installing tmux
 tmux is a terminal multiplexer that allows you to manage multiple terminal sessions from a single window.
@@ -64,7 +65,7 @@ touch ~/.tmux.conf
 Add the following configuration to ~/.tmux.conf:
 
 
-
+#
 ## Step 3: Creating the Custom Script
 
 This script will automate the launching of Alacritty with tmux and ensure the tmux session is closed when the terminal is closed.
@@ -88,7 +89,7 @@ Ensure the script is executable:
 ```zsh
 chmod +x ~/.local/bin/alacritty-with-tmux.sh
 ```
-
+#
 ## Step 4: Setting Up Keybindings
 
 You can bind a custom key combination to launch this script instead of the default terminal.
@@ -105,6 +106,7 @@ Replace the command with:
 
 Save and apply the changes.
 
+#
 ## Step 5: Verifying the Setup
 Press the keybinding (e.g., Ctrl+Alt+T) to launch the terminal with tmux.
 
@@ -114,6 +116,8 @@ Verify the tmux session is active:
 Close the terminal and verify the session is deleted:
 `tmux ls`
 
+
+#
 ## Step 6: Final Touches
 Customize your alacritty.toml and tmux.conf as needed to suit your workflow.
 
