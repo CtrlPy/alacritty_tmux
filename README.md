@@ -93,7 +93,7 @@ Replace the command with:
 ```zsh
 /home/rocket/.local/bin/alacritty-with-tmux.sh
 ```
-![Example Image](images/keyboard)
+![Example Image](images/keyboard.png)
 
 Save and apply the changes.
 
