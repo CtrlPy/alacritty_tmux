@@ -32,21 +32,26 @@ Alacritty is a GPU-accelerated terminal emulator that you will use as your prima
 2. Create the configuration file for Alacritty:
 
 
-```
+```zsh
 mkdir -p ~/.config/alacritty
 touch ~/.config/alacritty/alacritty.yml
 ```
+
+
 3. Add basic configurations to alacritty.yml:
 
 Convert alacritty.yml to alacritty.toml if prompted:
 
-`alacritty migrate`
+```zsh
+alacritty migrate
+```
 
 
 ## Step 2: Installing tmux
 tmux is a terminal multiplexer that allows you to manage multiple terminal sessions from a single window.
 
 Install tmux:
+
 ```zsh
 sudo pacman -S tmux
 ```
@@ -92,6 +97,7 @@ For XFCE:
 Open Settings -> Keyboard -> Application Shortcuts.
 Find the existing shortcut for exo-open --launch TerminalEmulator and edit it.
 Replace the command with:
+
 ```zsh
 /home/rocket/.local/bin/alacritty-with-tmux.sh
 ```
