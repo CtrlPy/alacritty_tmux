@@ -31,14 +31,11 @@ Alacritty is a GPU-accelerated terminal emulator that you will use as your prima
 
 2. Create the configuration file for Alacritty:
 
-```zsh
-
-mkdir -p ~/.config/alacritty
-
-touch ~/.config/alacritty/alacritty.yml
 
 ```
-
+mkdir -p ~/.config/alacritty
+touch ~/.config/alacritty/alacritty.yml
+```
 3. Add basic configurations to alacritty.yml:
 
 Convert alacritty.yml to alacritty.toml if prompted:
